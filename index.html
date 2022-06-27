@@ -10,7 +10,7 @@
     <main>
         <h1>Jerry Sim</h1>
 
-        <section>Favourite Foods
+        <section> <h2> <a id=FavouriteFoods"> Favourite Foods </a> </h2>
             <ul>
                 <li>Chicken Rice</li>
                 <li>Char Kway Teow</li>
@@ -19,15 +19,38 @@
             </ul>
         </section>
 
-        <section>Achievements
-            <progress value=90 max=100>Progress in this course</progress>
-            <progress value=20 max=100></progress>Progress in the Specialization capstone</progress>
-            <progress value=70 max=100> Progress in life goals</progress>
+        <section><h2><a id=Achievements"> Achievements </a></h2>
+			<label for="ProgressCourse">Progress in this course (100%)</label>
+            <progress id="ProgressCourse" value=100 max=100> 100% </progress><br>
+			
+			<label for="ProgressSpecial">Progress in the Specialization capstone (20%)</label>
+	        <progress id="ProgressSpecial" value=20 max=100> 20%</progress> <br>
+			
+			<label for="ProgressLife"> Progress in life goals (70%)</label>
+            <progress id="ProgressLife" value=70 max=100> 70% </progress> <br>
         </section>
 
-        <section>All About Me</section>
-    </main>
+        <section> <h2> <a id=AllAboutMe"> All About Me </a> </h2> 
+		My Childhood <br>
+		I was born in Singapore and grew up here. It's a island city here and space is limited. 
+		Whenever I am free I like to venture to the forest reserves and nature parks around the island.
+		<img src="http://www.intro-webdesign.com/images/newlogo.png"> <br>
+		This page was created by Jerry Sim and Colleen van Lent. To learn more about web design, visit <a href="http://www.intro-webdesign.com" > 
+		Intro to Web Design.</a>
+		</section>
+		<frameset rows="40%, 60%">
+  <frame src ="firstPage.html" />
+  <frame src ="2ndPage.html" /> 
+  </frameset>
+		
+	
+	</main>
     <footer>
+		<nav>
+  <a href="#FavouriteFoods"> Favourite Foods</a> |
+  <a href="#Achievements"> Achievements </a> |
+  <a href="#AllAboutMe"> All About Me </a>
+ </nav>
     </footer>
 </body>
 
